@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>201636003_오광용</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body onload="init()">
+  
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <!--7-6예제-->
+  <script>
+    var current = new Date();
+    if(current.getSeconds() % 2 == 0)
+    document.body.style.backgroundColor = "white";
+    else
+    document.body.style.backgroundColor = "skyblue";
+  </script>
+  <!--7-6예제-->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Web Programing</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h3 class="my-4">웹 사이트 적용하기</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item">7장 적용하기</a>
+          <a href="#" class="list-group-item">9장 적용하기</a>
+          <a href="#" class="list-group-item">10장 적용하기</a>
+          <a href="#" class="list-group-item">11장 적용하기</a>
+          <!--10-3예제-->
+          <a id="a" class="list-group-item"  onmouseover="startTimer(3000)" onmouseout="cancelTimer()">W3C<br>(3초간 올려놓으세요)</a>
+          <script>
+            var timerID=null;
+            function startTimer(time) {
+              // 타이머 시작
+              timerID = setTimeout("load('https://www.w3.org/')", time);
+              
+              // 툴팁 메시지
+              document.getElementById("a").title = "타이머 작동 시작...";
+            }
+            function cancelTimer() {
+              if(timerID !=null) 
+                clearTimeout(timerID); // 타이머 중단
+            }
+            function load(url) {
+              window.location = url; // 현재 윈도우에  url 사이트 로드 
+            }
+            </script>
+            <!--10-3예제-->
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!--7-5예제-->
+            <div class="carousel-item active">
+              <pre>
+                
+                                           <h4><strong>7-5예제</strong></h4>
+              </pre>
+              <script>
+                
+                var now = new Date(); // 현재 시간 값을 가진 Date 객체 생성
+                document.write("현재 웹페이지 접속 시간은 " + now.toUTCString()  + "입니다. <br>");
+                document.write(" 정확한 시간은 ")
+                document.write(now.getFullYear() + "년도 ");
+                document.write(now.getMonth() + 1 + "월 ");
+                document.write(now.getDate() + "일" );
+                document.write(now.getHours() + "시 ");
+                document.write(now.getMinutes() + "분 ");
+                document.write(now.getSeconds() + " ");
+                document.write(now.getMilliseconds() + ". 초 입니다.<hr>");
+
+              </script>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <!--7-5예제-->
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--7-3예제-->
+            <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              
+            <div class="card h-100" >
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+        
+              <script>
+                function pr(msg, arr) {
+                document.write(msg + arr.toString() + "<br>");
+              }
+              var point = new Array(); // 빈 배열 생성
+              point[0] = 2200000;
+              point[1] = 1540000; 
+              point[2] = 1200000;
+              point[3] = 4561230; 
+              point[4] = 3510000;
+              point[5] = 5302000; 
+              
+              var sum = 0; 
+              for(i=0; i<point.length; i++)
+                sum += point[i];
+              
+              document.write("평균 등록금은 " + sum/point.length + "원 입니다.");
+              </script>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">7-3</a>
+                </h4>
+                <h5>Array 객체로 배열 만들기</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+                            
+            </div>
+          </div>
+          <!--7-3예제-->
+
+          <!--7-4예제-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <script>
+                var a = new Array("오", "광", "용");
+                var b = new Array("황");
+                var c;
+
+                pr("배열 a = ", a);
+                pr("배열 b = ", b);
+                document.write("<hr>");
+
+                c = a.concat(b); 
+                pr("c = a.concat(b)후 c = ", c);
+                pr("c = a.concat(b)후 a = ", a);
+
+                c = a.join("##"); 
+                pr("c = a.join() 후 c = ", c);
+                pr("c = a.join() 후 a = ", a);
+
+                c = a.reverse(); 
+                pr("c= a.reverse() 후 c = ", c); 
+                pr("c= a.reverse() 후 a = ", a);
+
+                c = a.slice(1, 2); 
+                pr("c= a.slice(1, 2) 후 c = ", c);
+                pr("c= a.slice(1, 2) 후 a = ", a);
+
+                c = a.sort(); 
+                pr("c= a.sort() 후 c = ", c);
+                pr("c= a.sort() 후 a = ", a);
+
+                c = a.toString(); 
+                document.write("a.toString() : " + c);
+              </script>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">7-4</a>
+                </h4>
+                <h5>Array 객체의 메소드 활용</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+              </div>
+              <!--7-4예제-->          
+              
+            </div>
+          </div>
+
+          
+          <!--9-4예제-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <script>
+              var p;
+              function init() { // 문서가 완전히 로드되었을 때 호출
+	            p = document.getElementById("p");	
+	            p.onmouseover = function () { // 익명 함수
+		            this.style.backgroundColor = "orchid";
+            	  }; 
+	            p.addEventListener("mouseout", 
+		          function () { this.style.backgroundColor="white"; } // 익명 함수
+	              );
+                }
+            </script>
+            <div class="card h-100">
+              
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">9-4</a>
+                </h4>
+                <h5><p id="p">익명함수로 이벤트리스너 작성</p></h5>
+                <p class="card-text">마우스를 올려보세요</p>
+              </div>                           
+            </div>
+          </div>
+          <!--9-4예제-->
+
+          <!--9-5,9-6예제-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <script>
+                function f(e) {
+                  alert(e.type);
+                }
+                document.getElementById("p").onmouseover = f;
+
+                function fu(f) {
+                  var text = "type: " + f.type + "<br>"
+                      + "target: " + f.target + "<br>"
+                      + "currentTarget: " + f.currentTarget + "<br>"
+                      + "defaultPrevented: " + f.defaultPrevented;
+
+                      var g = document.getElementById("g");
+                      g.innerHTML = text;
+                }
+              </script>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">9-5</a>
+                </h4>
+                <h5>이벤트 리스너에게 이벤트 객체 전달 받기</h5>
+                <p id="p">마우스를 올려보세요</p>
+                <button onclick="f(event)">클릭</button>
+                <br>
+                <br>
+                <hr>
+                <h4 class="card-title">
+                  <a href="#">9-6</a>
+                </h4>
+                <h5>이벤트 객체의 프로퍼티 출력</h5>
+                <p id="g">마우스를 올려보세요</p>
+                <button onclick="fu(event)">클릭</button>
+              </div>
+              </div>
+          </div>
+          <!--9-5,9-6예제-->
+          
+          <!--10-4예제-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              
+              
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">10-4</a>
+                </h4>
+                <h5>setInterval()로 텍스트 회전</h5>
+                <div style="text-align: center; padding: 1em; "><span id="span" style="background-color: cadetblue;">setInterval</span><hr></div>
+                <script>
+                  var span = document.getElementById("span");
+                  var timerID = setInterval("doRotate()", 200); // 200밀리초 주기로 doRotate() 호출
+                  
+                  span.onclick = function (e) { // 마우스 클릭 이벤트 리스너
+                    clearInterval(timerID); // 타이머 해제. 문자열 회전 중단
+                  }
+                  
+                  function doRotate() {
+                    var str = span.innerHTML;
+                    var firstChar = str.substr(0, 1);
+                    var remains = str.substr(1, str.length-1);
+                    str = remains + firstChar;
+                    span.innerHTML = str; // str 텍스트를 span 객체에 출력
+                  }
+                  </script>
+                  <!--10-4예제-->
+                  <!--10-5예제-->
+                  <h4><a href="#">10-5</a>
+                </h4>
+                <h5>윈도우의 위치와 크기 조절</h5>
+                <hr>
+                <button onclick="window.moveBy(-10, 0)">left</button>
+                <button onclick="window.moveBy(10, 0)">right</button>
+                <button onclick="self.moveBy(0, -10)">up</button>
+                <button onclick="moveBy(0, 10)">down</button>
+                <button onclick="resizeBy(10, 10)">+</button>
+                <button onclick="resizeBy(-10, -10)">-</button>
+                <!--10-5예제-->
+                <p class="card-text">.</p>
+              </div>
+              </div>
+          </div>
+          
+
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Five</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+
+  <!--파노라마 애니메이션-->
+  <footer >
+    <canvas id="canvas" width="1000" height="200" ></canvas>
+    <Style>
+      canvas {
+        padding:0;
+        margin: auto;
+        display: block;
+        position: absolute;        
+        left: 0;
+        right: 0;
+    
+      }
+    </Style>
+    <script>
+      var img = new Image();
+      
+      // 변수
+      // 스크롤될 이미지, 방향, 속도를 바꾸려면 변수값을 바꾼다.
+      
+      img.src = '웹.jpg';
+      var CanvasXSize = 800;
+      var CanvasYSize = 200;
+      var speed = 30; // 값이 작을 수록 빨라진다
+      var scale = 1.05;
+      var y = -4.5; // 수직 옵셋
+      
+      // 주요 프로그램
+      
+      var dx = 0.75;
+      var imgW;
+      var imgH;
+      var x = 0;
+      var clearX;
+      var clearY;
+      var ctx;
+      
+      img.onload = function() {
+          imgW = img.width*scale;
+          imgH = img.height*scale;
+          if (imgW > CanvasXSize) { x = CanvasXSize-imgW; } // 캔버스보다 큰 이미지
+          if (imgW > CanvasXSize) { clearX = imgW; } // 캔버스보다 큰 이미지
+          else { clearX = CanvasXSize; }
+          if (imgH > CanvasYSize) { clearY = imgH; } // 캔버스보다 큰 이미지
+          else { clearY = CanvasYSize; }
+          // 캔버스 요소 얻기
+          ctx = document.getElementById('canvas').getContext('2d');
+          // 새로 그리기 속도 설정
+          return setInterval(draw, speed);
+      }
+      
+      function draw() {
+          // 캔버스를 비운다
+          ctx.clearRect(0,0,clearX,clearY);
+          // 이미지가 캔버스보다 작거나 같다면 (If image is <= Canvas Size)
+          if (imgW <= CanvasXSize) {
+              // 재설정, 처음부터 시작
+              if (x > (CanvasXSize)) { x = 0; }
+              // 추가 이미지 그리기
+              if (x > (CanvasXSize-imgW)) { ctx.drawImage(img,x-CanvasXSize+1,y,imgW,imgH); }
+          }
+          // 이미지가 캔버스보다 크다면 (If image is > Canvas Size)
+          else {
+              // 재설정, 처음부터 시작
+              if (x > (CanvasXSize)) { x = CanvasXSize-imgW; }
+              // 추가 이미지 그리기
+              if (x > (CanvasXSize-imgW)) { ctx.drawImage(img,x-imgW+1,y,imgW,imgH); }
+          }
+          // 이미지 그리기
+          ctx.drawImage(img,x,y,imgW,imgH);
+          // 움직임 정도
+          x += dx;
+      }
+          </script>
+          <!--파노라마 애니메이션-->
+          
+    
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
